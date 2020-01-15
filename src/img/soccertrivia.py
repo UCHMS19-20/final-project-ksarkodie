@@ -5,10 +5,17 @@ username = input("What is your name? ")
 # greet player
 print("What's up {username}? Let's start playing the Soccer Trivia game!")
 
+
 # set starting score for player
 points = 0
 
-Question, Answer, Answer Choices, 
+# making a class for the questions 
+class q:
+    """For describing a question asked to user"""
+    def __init__ (self, Question, Answer, AnswerChoices)
+        self.question = Question
+        self.answer = Answer
+        self.answerchoices = answerchoices
 
 
 question1 = q("Which country has won the most world cups in history?", "Brazil" , ["England", "Argentina", "Germany", "Brazil"])
