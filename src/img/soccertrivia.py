@@ -7,7 +7,7 @@ print(f"What's up {name}? Let's start playing Footy Frenzy!")
 
 # set starting score for player
 points = 0
-
+  
 # making a class for the questions 
 class q:
     """For describing a question asked to user"""
@@ -17,7 +17,7 @@ class q:
         self.answerchoices = AnswerChoices
 
 # all trivia questions, mostly getting harder as user moves on
-question1 = q("Who is the only player who can use his/her hands?", "Goalkeeper" , ["Striker", "Defender", "Goalkeeper", "Midfielder"])
+question1 = q("Who is the only player on the field who can use his/her hands?", "Goalkeeper" , ["Striker", "Defender", "Goalkeeper", "Midfielder"])
 question2 = q("How many players are on the field for one team in a game?", "11" , ["10", "3", "9", "11"])
 question3 = q("Which player is responsible for scoring goals most of the time?", "Striker" , ["Striker", "Defender", "Winger", "Attacking Midfielder"])
 question4 = q("Which country won the 2018 Fifa World Cup?", "France" , ["Croatia", "France", "Belgium", "Germany"])
@@ -39,7 +39,7 @@ qs = [question1, question2, question3, question4, question5, question6, question
 for questioni in qs:
   time.sleep(1.5)
   print(f"{questioni.question}")
-  time.sleep(3.0)
+  time.sleep(2.5)
   print(f"Choices: {questioni.answerchoices}")
   user_answer = input("What is your answer? ")
 # ask user the question and display choices, and ask for input
