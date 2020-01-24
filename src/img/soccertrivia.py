@@ -1,4 +1,3 @@
-import random 
 import time
 
 # Ask user for name to begin
@@ -38,9 +37,9 @@ question15 = q("Who is the top scoring African in English Premier League history
 qs = [question1, question2, question3, question4, question5, question6, question7, question8, question9, question10, question11, question12, question13, question14, question15]
 
 for questioni in qs:
-  time.sleep(2.0)
+  time.sleep(1.5)
   print(f"{questioni.question}")
-  time.sleep(4.0)
+  time.sleep(3.0)
   print(f"Choices: {questioni.answerchoices}")
   user_answer = input("What is your answer? ")
 # ask user the question and display choices, and ask for input
